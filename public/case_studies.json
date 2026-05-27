@@ -1,0 +1,38 @@
+[
+    {
+        "id": "507d77a4-7f7c-4ad9-9532-e4ae8f65023a",
+        "title": "Preventative Maintenance of Production Assets",
+        "company_name": "Maya HTT",
+        "pdf_path": "submissions/ee692674-b783-4c97-9af6-d89e35383508/1768267482785-Smart_Signal_Explorer_-_Use_Case_-_Preventative_Maintenance_of_Production_Assets_Factsheet.pdf",
+        "brief_description": "Maya HTT's Smart Signal Explorer, deployed on Siemens MindSphere, uses advanced signal processing algorithms to analyze IoT time series data from connected manufacturing assets. By identifying early signs of performance degradation, the solution enables data-driven preventative maintenance scheduling, reducing unplanned downtime and costs while eliminating offline analysis workflows.",
+        "logo_path": "submissions/ee692674-b783-4c97-9af6-d89e35383508/1770764728545-logo-mayahtt-corporate-logo-sm.png",
+        "logo_status": "approved"
+    },
+    {
+        "id": "70886ae1-d21f-4215-9b94-4f56229b1646",
+        "title": "Festo & 3dverse : Device-Agnostic Immersive Training",
+        "company_name": "3dverse",
+        "pdf_path": "submissions/35657f08-cab6-4707-b55e-5b6f044992e9/1770132285071-Festo_Use_Case-_AI4M.pdf",
+        "brief_description": "This use case demonstrates how a cloud-native, device-agnostic digital twin enables immersive industrial training and operations without physical constraints. A high-fidelity virtual replica allows teams to learn, collaborate, and operate from anywhere, using the same authoritative environment. Training time and costs are reduced, scenarios can be repeated safely, and knowledge scales  while preserving realism, accuracy, and operational continuity. It supports standardization across sites.",
+        "logo_path": null,
+        "logo_status": null
+    },
+    {
+        "id": "85b67b92-de60-42ee-989b-4ff52e33c9ef",
+        "title": "AI-Based Real-Time Production Planning for 29% Throughput Increase",
+        "company_name": "NTWIST",
+        "pdf_path": "submissions/e22c2d20-a9af-4dd5-b233-a2d9572c351e/1769798765067-Case_Study_Real-Time_Production_Planning_delivers_29__more_throughput.pdf",
+        "brief_description": "A manufacturer facing bottlenecks and manual scheduling inefficiencies implemented real-time AI-based production planning. By dynamically optimizing schedules based on live shop floor data, the company successfully increased its total throughput by 29% and improved resource utilization across the facility.",
+        "logo_path": null,
+        "logo_status": null
+    },
+    {
+        "id": "b8059be6-b570-437a-8d82-5aae693fd6e1",
+        "title": "Hypervision for Automative Manufacturing",
+        "company_name": "3dverse",
+        "pdf_path": "submissions/35657f08-cab6-4707-b55e-5b6f044992e9/1770666779323-Hypervision_Use_Case.pdf",
+        "brief_description": "This use case focuses on hypervision for automotive manufacturing. 3dverse provides the cloud-native, interoperable platform that unifies real-time data across OT, IT, and engineering systems. AI capabilities are integrated through interoperability to augment hypervision by verifying system behavior, detecting anomalies, and contextualizing insights—supporting faster decision-making, reduced downtime, and improved operational resilience without replacing existing systems.",
+        "logo_path": null,
+        "logo_status": null
+    }
+]
