@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #09090b;
-  --foreground: #fafafa;
+  --background: #050510;
+  --foreground: #f8fafc;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -21,8 +21,122 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar { width: 6px; height: 6px; }
+/* ── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #27272a; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
+::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #334155; }
+
+/* ── Industry 4.0 Moving Grid ─────────────────────────────────────────────── */
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(56, 189, 248, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.055) 1px, transparent 1px);
+  background-size: 64px 64px;
+  animation: grid-shift 28s linear infinite;
+}
+
+@keyframes grid-shift {
+  to { background-position: 64px 64px; }
+}
+
+/* ── Hero gradient headline ────────────────────────────────────────────────── */
+.hero-gradient-text {
+  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 35%, #34d399 70%, #38bdf8 100%);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-flow 5s ease infinite;
+}
+
+@keyframes gradient-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50%       { background-position: 100% 50%; }
+}
+
+/* ── Animated orbs ─────────────────────────────────────────────────────────── */
+.animate-orb-1 { animation: orb1 20s ease-in-out infinite; }
+.animate-orb-2 { animation: orb2 25s ease-in-out infinite; }
+.animate-orb-3 { animation: orb3 15s ease-in-out infinite; }
+
+@keyframes orb1 {
+  0%,100% { transform: translate(0, 0);       opacity: 0.12; }
+  33%     { transform: translate(70px,-50px); opacity: 0.20; }
+  66%     { transform: translate(-35px,35px); opacity: 0.08; }
+}
+@keyframes orb2 {
+  0%,100% { transform: translate(0, 0);       opacity: 0.08; }
+  40%     { transform: translate(-80px,55px); opacity: 0.14; }
+  70%     { transform: translate(45px,-35px); opacity: 0.06; }
+}
+@keyframes orb3 {
+  0%,100% { transform: translate(-50%,-50%) scale(1);   opacity: 0.05; }
+  50%     { transform: translate(-50%,-50%) scale(1.6); opacity: 0.11; }
+}
+
+/* ── Horizontal scan line ──────────────────────────────────────────────────── */
+.scan-line {
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(56,189,248,0.45), transparent);
+  animation: scan-move 12s linear infinite;
+  pointer-events: none;
+}
+@keyframes scan-move {
+  0%   { top: 0;    opacity: 0; }
+  3%   { opacity: 1; }
+  97%  { opacity: 0.4; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* ── Shimmer on CTA button ─────────────────────────────────────────────────── */
+.shimmer {
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    rgba(255,255,255,0.08) 50%,
+    transparent 70%
+  );
+  background-size: 200% 100%;
+  animation: shimmer-move 2.5s linear infinite;
+}
+@keyframes shimmer-move {
+  from { background-position: -200% 0; }
+  to   { background-position:  200% 0; }
+}
+
+/* ── Pulsing dot (live indicator) ──────────────────────────────────────────── */
+.pulse-dot {
+  animation: pulse-dot 2s cubic-bezier(0.4,0,0.6,1) infinite;
+}
+@keyframes pulse-dot {
+  0%,100% { opacity: 1; }
+  50%     { opacity: 0.25; }
+}
+
+/* ── Fade-in-up entrance ───────────────────────────────────────────────────── */
+.animate-fade-in-up { animation: fade-up 0.85s cubic-bezier(0.16,1,0.3,1) both; }
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-200 { animation-delay: 220ms; }
+.animation-delay-300 { animation-delay: 360ms; }
+.animation-delay-400 { animation-delay: 520ms; }
+.animation-delay-500 { animation-delay: 680ms; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+/* ── Card border-flow animation ────────────────────────────────────────────── */
+@keyframes border-flow {
+  0%,100% { opacity: 0.4; }
+  50%     { opacity: 0.8; }
+}
+
+/* ── Mini data bars (feature card decoration) ──────────────────────────────── */
+@keyframes bar-grow {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
