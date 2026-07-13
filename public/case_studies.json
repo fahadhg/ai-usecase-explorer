@@ -363,5 +363,30 @@
       "Digital Transformation"
     ],
     "sustainability_focus": false
+  },
+  {
+    "id": "7ac5d3d7-b8c8-4632-b867-faf7bb4a8666",
+    "title": "AI-Assisted Machine and Process Safety Assessment for Industrial Manufacturing",
+    "company_name": "S.A.F.E. Engineering Inc.",
+    "client_name": "Confidential food packaging manufacturer (Greater Toronto Area)",
+    "pdf_path": "",
+    "brief_description": "S.A.F.E. Engineering's AI-powered machine and process safety co-pilot analyzes equipment and process information, surfaces relevant standards, and drafts structured risk assessment content — helping engineering and safety teams close gaps faster and with greater consistency across complex, evolving regulatory requirements.",
+    "logo_path": "https://www.safeengineering.ca/wp-content/uploads/2018/03/logo-2.png",
+    "logo_status": "sourced_from_vendor_site",
+    "department": "Human Resources & Safety",
+    "goal": "Manufacturers struggle to consistently identify and document machine and process safety risks across complex lines and evolving regulations. This safety assessment tool analyzes equipment and process information, surfaces relevant standards, and drafts structured risk assessment content, helping engineering and safety teams close gaps faster and with greater consistency.",
+    "results": "Early pilots indicate approximately 25–30% reduction in time to complete machine and process safety assessments and a noticeable decrease in late-stage safety-driven design changes, while maintaining or improving documentation quality. Estimated 3–5x ROI over 24 months through reduced engineering and safety specialist hours per assessment, fewer late design reworks due to safety issues, and improved readiness for regulatory and client audits.",
+    "kpis": "Time to complete machine safety risk assessments, Number of open safety action items per project, Time to close safety actions, Frequency of late-stage design changes due to safety findings, Number of safety documentation non-conformances in internal QA, Recordable incident rate related to machine and process operations",
+    "example": "Confidential food packaging manufacturer, Greater Toronto Area, 2025: used AI-assisted process safety reviews on new line, reducing assessment preparation time by ~30% and enabling earlier identification of noncompliance.",
+    "fit_criteria": "Manufacturers with complex production lines and evolving regulatory requirements needing systematic identification and documentation of machine and process safety risks for new or existing equipment; Canadian industrial operations undergoing new line commissioning or equipment changes.",
+    "not_fit_when": "Facilities with static, well-documented safety programs and no upcoming equipment or process changes; operations without engineering/safety teams able to act on generated risk assessment content.",
+    "time_to_value": "Meaningful value within 3–6 months from initial pilot deployment, with broader adoption across machine and process safety reviews within 9–12 months",
+    "cost_tier": "$",
+    "strategic_goals": [
+      "Safety",
+      "Risk Management",
+      "Quality & Compliance"
+    ],
+    "sustainability_focus": false
   }
 ]
