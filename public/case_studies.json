@@ -17,7 +17,12 @@
     "not_fit_when": "Assets not connected to MindSphere or compatible IoT platform; organizations without historical time series data; environments where machines lack sensors or telemetry capabilities.",
     "time_to_value": null,
     "cost_tier": "$$",
-    "strategic_goals": ["Cost Reduction", "Productivity", "Digital Transformation", "Risk Management"],
+    "strategic_goals": [
+      "Cost Reduction",
+      "Productivity",
+      "Digital Transformation",
+      "Risk Management"
+    ],
     "sustainability_focus": false
   },
   {
@@ -27,8 +32,8 @@
     "client_name": "Festo Didactic France",
     "pdf_path": "https://txwkssixhznbnlxduluq.supabase.co/storage/v1/object/public/case-studies/submissions/35657f08-cab6-4707-b55e-5b6f044992e9/1770132285071-Festo_Use_Case-_AI4M.pdf",
     "brief_description": "3dverse enables Festo to deliver cloud-native digital twin training for industrial equipment, replacing physical machine replication with a high-fidelity, device-agnostic simulation of the MPS 403 production system. Trainees access interactive sessions from desktop, VR, or AR without installing software, and AI agents connect to real-time machine data to support predictive maintenance and anomaly detection within the training environment.",
-    "logo_path": null,
-    "logo_status": null,
+    "logo_path": "https://ai4manufacturing.ca/_uploads/698e283053f13.png",
+    "logo_status": "sourced_from_ai4m_directory",
     "department": "Human Resources & Safety",
     "goal": "Scale industrial training globally without duplicating physical equipment, reducing cost and improving trainee competency speed through persistent cloud-based digital twin simulations.",
     "results": "Up to 7x lower cost versus physical replication and on-prem setups; 25–40% faster time-to-competency via guided simulation; 2–4 weeks to first functional pilot.",
@@ -38,7 +43,12 @@
     "not_fit_when": "Organizations with readily available physical training equipment and no scaling needs; environments without cloud connectivity; training scenarios requiring physical tactile feedback that cannot be simulated.",
     "time_to_value": "2–4 weeks to first functional pilot",
     "cost_tier": "$$",
-    "strategic_goals": ["Productivity", "Innovation", "Digital Transformation", "Cost Reduction"],
+    "strategic_goals": [
+      "Productivity",
+      "Innovation",
+      "Digital Transformation",
+      "Cost Reduction"
+    ],
     "sustainability_focus": false
   },
   {
@@ -48,8 +58,8 @@
     "client_name": null,
     "pdf_path": "https://txwkssixhznbnlxduluq.supabase.co/storage/v1/object/public/case-studies/submissions/e22c2d20-a9af-4dd5-b233-a2d9572c351e/1769798765067-Case_Study_Real-Time_Production_Planning_delivers_29__more_throughput.pdf",
     "brief_description": "A manufacturer facing bottlenecks and manual scheduling inefficiencies implemented NTWIST's real-time AI-based production planning. By dynamically optimizing schedules based on live shop floor data, the company increased total throughput by 29% and improved resource utilization across the facility without adding capital equipment.",
-    "logo_path": null,
-    "logo_status": null,
+    "logo_path": "https://ai4manufacturing.ca/_uploads/63da7071d8dd9.png",
+    "logo_status": "sourced_from_ai4m_directory",
     "department": "Manufacturing Operations",
     "goal": "Increase manufacturing throughput and eliminate scheduling inefficiencies by dynamically optimizing production schedules using live shop floor data.",
     "results": "29% increase in total throughput; improved resource utilization across the facility.",
@@ -59,7 +69,11 @@
     "not_fit_when": "Highly standardized mass-production lines with already optimized scheduling; very simple operations with minimal job routing complexity.",
     "time_to_value": null,
     "cost_tier": "$$",
-    "strategic_goals": ["Productivity", "Cost Reduction", "Digital Transformation"],
+    "strategic_goals": [
+      "Productivity",
+      "Cost Reduction",
+      "Digital Transformation"
+    ],
     "sustainability_focus": false
   },
   {
@@ -69,8 +83,8 @@
     "client_name": null,
     "pdf_path": "https://txwkssixhznbnlxduluq.supabase.co/storage/v1/object/public/case-studies/submissions/35657f08-cab6-4707-b55e-5b6f044992e9/1770666779323-Hypervision_Use_Case.pdf",
     "brief_description": "3dverse provides a persistent, cloud-native hypervision layer for automotive manufacturing that consolidates real-time OT, IT, and engineering data into a single 3D operational view accessible from any device. AI agents continuously cross-check live telemetry against expected states to detect anomalies early, connecting existing SAP, MES, and WMS systems into a unified source of truth.",
-    "logo_path": null,
-    "logo_status": null,
+    "logo_path": "https://ai4manufacturing.ca/_uploads/698e283053f13.png",
+    "logo_status": "sourced_from_ai4m_directory",
     "department": "Manufacturing Operations",
     "goal": "Move industrial operations from reactive troubleshooting to proactive control by providing a single authoritative real-time interface connecting all systems, people, and AI across the factory floor.",
     "results": "Up to 40% reduction in incident response and unplanned downtime; 4–6 weeks to first functional pilot.",
@@ -80,7 +94,13 @@
     "not_fit_when": "Small manufacturers with simple already-unified operations; environments without connected systems or data streams; organizations not ready for cloud-native infrastructure.",
     "time_to_value": "4–6 weeks to first functional pilot",
     "cost_tier": "$$$",
-    "strategic_goals": ["Productivity", "Risk Management", "Digital Transformation", "Quality & Compliance", "Innovation"],
+    "strategic_goals": [
+      "Productivity",
+      "Risk Management",
+      "Digital Transformation",
+      "Quality & Compliance",
+      "Innovation"
+    ],
     "sustainability_focus": false
   },
   {
@@ -90,8 +110,8 @@
     "client_name": null,
     "pdf_path": "https://txwkssixhznbnlxduluq.supabase.co/storage/v1/object/public/case-studies/submissions/d4e4b9dd-4881-4b82-aed9-a9a4167c10dc/1769709932428-LowVolumeeCommercePaper.pdf",
     "brief_description": "A supervised ML approach (Random Forest, XGBoost, LightGBM, CatBoost, ANN) trained on simulation-generated data to predict total pick distance in low-volume eCommerce fulfillment warehouses from layout, planning, and operational parameters. SHAP analysis identifies picklist size, layout dimensions, seasonality, and slotting algorithm as the most influential factors — enabling rapid, accurate bid engineering for 4PL/3PL companies.",
-    "logo_path": null,
-    "logo_status": null,
+    "logo_path": "https://www.dal.ca/content/experience-fragments/www/global/homepage-header/master/_jcr_content/root/wrapper/flex_wrapper/image.coreimg.svg/1709069699013/dalhousie-logo-black.svg",
+    "logo_status": "sourced_from_ai4m_directory",
     "department": "Supply Chain & Logistics",
     "goal": "Enable 4PL/3PL bid engineering teams to quickly and accurately size and cost low-volume eCommerce picker-to-parts fulfillment sections using trained ML surrogate models.",
     "results": "XGBoost, LightGBM, CatBoost, and Random Forest all achieved R²=1.0 on test data (near-perfect prediction of total pick distance); tuned MLP ANN achieved R²=0.99 with MAE of 14.15.",
@@ -101,7 +121,12 @@
     "not_fit_when": "High-volume operations with tens of thousands of SKUs supported by fully automated systems (e.g., AutoStore); organizations without historical or synthetic data to train models; facilities with unique non-standard routing policies.",
     "time_to_value": null,
     "cost_tier": "$",
-    "strategic_goals": ["Cost Reduction", "Productivity", "Digital Transformation", "Innovation"],
+    "strategic_goals": [
+      "Cost Reduction",
+      "Productivity",
+      "Digital Transformation",
+      "Innovation"
+    ],
     "sustainability_focus": false
   },
   {
@@ -111,8 +136,8 @@
     "client_name": "Unnamed bespoke fabrication shop",
     "pdf_path": "https://txwkssixhznbnlxduluq.supabase.co/storage/v1/object/public/case-studies/submissions/aaeabb12-11b8-4fe6-af3a-b9ac0832b18a/1770415093616-Case_Study__Empowering_a_Bespoke_Fabrication_Shop_to_Experiment_with_ERP_and_AI_through_Free_and_Open_Source_Solutions.pdf",
     "brief_description": "Evormore helped a lean bespoke fabrication shop overcome analysis paralysis around ERP adoption by deploying Dolibarr (open-source ERP) on the client's own server with an AI-powered chat interface built on OpenWebUI. Users interact with the ERP via simple text commands to create projects, manage inventory, and generate proposals without extensive training — preserving data ownership and eliminating expensive enterprise ERP licensing.",
-    "logo_path": null,
-    "logo_status": null,
+    "logo_path": "https://ai4manufacturing.ca/_uploads/69972c486bb20.png",
+    "logo_status": "sourced_from_ai4m_directory",
     "department": "Manufacturing Operations",
     "goal": "Enable a small bespoke fabrication shop to affordably adopt and experiment with ERP and AI technologies using free and open-source software, eliminating the high cost and risk barrier of traditional enterprise ERP procurement.",
     "results": "Eliminated expensive ERP licensing costs; dramatically reduced change management burden; faster user adoption through chat-based interface vs. traditional ERP training.",
@@ -122,7 +147,12 @@
     "not_fit_when": "Large enterprises requiring dedicated vendor support or complex enterprise integrations; organizations needing turnkey solutions without internal IT setup; manufacturers with highly regulated environments requiring certified commercial ERP systems.",
     "time_to_value": null,
     "cost_tier": "$",
-    "strategic_goals": ["Digital Transformation", "Cost Reduction", "Productivity", "Innovation"],
+    "strategic_goals": [
+      "Digital Transformation",
+      "Cost Reduction",
+      "Productivity",
+      "Innovation"
+    ],
     "sustainability_focus": false
   },
   {
@@ -132,8 +162,8 @@
     "client_name": null,
     "pdf_path": "https://txwkssixhznbnlxduluq.supabase.co/storage/v1/object/public/case-studies/submissions/688dd2bd-b86b-4d4f-94bf-71bf5d6b699c/1771009341916-In-Simulation_Testing_of_Deep_Learning_Vision_Models_in_Autonomous_Robotic_Manipulators_-_Sycodal.pdf",
     "brief_description": "Sycodal and Polytechnique Montréal co-developed MARTENS (Manipulator Robot Testing and Enhancement in Simulation), integrating NVIDIA Isaac Sim with evolutionary search to systematically find failure-revealing test scenarios for DL vision models in autonomous robotic pick-and-place. The framework both exposes design flaws and repairs DNN models using synthetic failure data — detecting 25–50% more failures than random testing and fixing over 99% of revealed failures.",
-    "logo_path": null,
-    "logo_status": null,
+    "logo_path": "https://sycodal.ca/wp-content/uploads/2024/04/logo.png",
+    "logo_status": "sourced_from_ai4m_directory",
     "department": "Manufacturing Operations",
     "goal": "Enable autonomous robotic manipulators to be tested and improved in simulation before real-world deployment, reducing costly real-world data collection and uncovering design flaws early.",
     "results": "MARTENS detected 25–50% more failures with greater diversity vs. random test generation; 31% of generated test cases caused ARM task failure on average; over 99% of revealed failures fixed after DNN fine-tuning; mAP improved from 0.80/0.75 (real-world-only training, 25+ epochs) to 0.95/0.89 (MARTENS, <10 epochs).",
@@ -143,7 +173,13 @@
     "not_fit_when": "Applications without a photorealistic simulation environment or where sim-to-real gap is insurmountably large (e.g., highly deformable materials); situations requiring real-time online learning; organizations without GPU compute resources; non-vision-guided robotic systems.",
     "time_to_value": null,
     "cost_tier": "$$",
-    "strategic_goals": ["Quality & Compliance", "Innovation", "Risk Management", "Safety", "Digital Transformation"],
+    "strategic_goals": [
+      "Quality & Compliance",
+      "Innovation",
+      "Risk Management",
+      "Safety",
+      "Digital Transformation"
+    ],
     "sustainability_focus": false
   },
   {
@@ -153,8 +189,8 @@
     "client_name": null,
     "pdf_path": "https://txwkssixhznbnlxduluq.supabase.co/storage/v1/object/public/case-studies/submissions/688dd2bd-b86b-4d4f-94bf-71bf5d6b699c/1771009537210-Trimming_the_Risk-_Towards_Reliable_Continuous_Training_for_Deep_Learning_Inspection_Systems_-_Sycodal.pdf",
     "brief_description": "Sycodal and Polytechnique Montréal propose a two-stage filtering approach for reliable Continuous Training of deep learning manufacturing inspection systems. Stage 1 filters low-confidence predictions; Stage 2 uses a VAE and histogram embeddings with Isolation Forest to reject distribution-drifted data before fine-tuning — preventing catastrophic forgetting and silent model degradation on two industrial use cases (popsicle stick printing and glass bottle inspection).",
-    "logo_path": null,
-    "logo_status": null,
+    "logo_path": "https://sycodal.ca/wp-content/uploads/2024/04/logo.png",
+    "logo_status": "sourced_from_ai4m_directory",
     "department": "Quality Management",
     "goal": "Keep deployed DL inspection models accurate over time by filtering unreliable and drifted production data before retraining, avoiding silent performance degradation in manufacturing quality inspection systems.",
     "results": "Less than 9% of erroneous self-labeled data retained after filtering; model performance improved by up to 14% on production data without degrading original validation results. Popsicle stick use case: production F1 improved from 45.7% (original) to 59.7%. Glass bottle use case: validation F1 improved from 80.2% (vanilla CT, catastrophic forgetting) to 93.8% with proposed approach. Distribution-based filter lowered false acceptances by up to 6x vs. confidence filter alone.",
@@ -164,7 +200,12 @@
     "not_fit_when": "Static production environments where data distribution never changes; inspection tasks where new defect types are so radically different that filtered CT cannot adapt; organizations without a deployed DL inspection model to maintain; scenarios where ground truth labels are always available from human annotators.",
     "time_to_value": null,
     "cost_tier": "$$",
-    "strategic_goals": ["Quality & Compliance", "Risk Management", "Innovation", "Digital Transformation"],
+    "strategic_goals": [
+      "Quality & Compliance",
+      "Risk Management",
+      "Innovation",
+      "Digital Transformation"
+    ],
     "sustainability_focus": false
   },
   {
@@ -174,8 +215,8 @@
     "client_name": null,
     "pdf_path": "https://txwkssixhznbnlxduluq.supabase.co/storage/v1/object/public/case-studies/submissions/688dd2bd-b86b-4d4f-94bf-71bf5d6b699c/1771009793355-Reinforcement_learning_in_Isaac_Sim_-_Sycodal.pdf",
     "brief_description": "Sycodal and McGill University developed a guided domain randomization framework for reinforcement learning in NVIDIA Isaac Sim, targeting industrial robotic manipulation (Kinova Link-6 pick-and-place). Training RL policies across thousands of parallelized randomized environments using PPO, the system transfers learned policies directly to a real-world robot — demonstrating that increased simulation training narrows the sim-to-real performance gap.",
-    "logo_path": null,
-    "logo_status": null,
+    "logo_path": "https://sycodal.ca/wp-content/uploads/2024/04/logo.png",
+    "logo_status": "sourced_from_ai4m_directory",
     "department": "Manufacturing Operations",
     "goal": "Address the sim-to-real gap in industrial robotics by developing guided domain randomization for RL policies trained in massively parallelized simulation that robustly transfer to real-world robotic manipulation.",
     "results": "PPO at 10k simulation steps: reward 0.31 ± 0.04 (sim), 0.29 ± 0.08 (real). PPO at 100k steps: reward 0.43 ± 0.03 (sim), 0.41 ± 0.13 (real). Increased simulation training narrows the sim-to-real gap. Policy trained in only a few hours and successfully deployed to real Kinova Link-6 robot with only calibration adjustments.",
@@ -185,7 +226,12 @@
     "not_fit_when": "Applications where sim-to-real gap remains unacceptably large (e.g., highly deformable materials or complex contact physics); organizations without GPU compute for large-scale parallel RL training; tasks so simple that classical control suffices; scenarios requiring immediate deployment with no simulation development phase.",
     "time_to_value": "A few hours for initial policy training; additional time for calibration and real-world validation",
     "cost_tier": "$$",
-    "strategic_goals": ["Innovation", "Productivity", "Digital Transformation", "Safety"],
+    "strategic_goals": [
+      "Innovation",
+      "Productivity",
+      "Digital Transformation",
+      "Safety"
+    ],
     "sustainability_focus": false
   },
   {
@@ -195,8 +241,8 @@
     "client_name": "Bridor",
     "pdf_path": "https://txwkssixhznbnlxduluq.supabase.co/storage/v1/object/public/case-studies/submissions/344a6650-e4e3-4858-af88-a9b806de7f02/1771077460220-Bridor_-_Real_time_anomaly_detection___quality_monitoring.pdf",
     "brief_description": "Ingeno deployed Sentinelle, an AI-powered real-time quality monitoring system for Bridor (large bakery manufacturer), replacing manual quality control that caused hours-long delays in detecting non-conformities. The solution features severity- and persistence-based alerting, a real-time dashboard with SKU-specific compliance thresholds, and tiered escalation notifications — scaling across 4 manufacturing facilities.",
-    "logo_path": null,
-    "logo_status": null,
+    "logo_path": "https://ai4manufacturing.ca/_uploads/686ff87f8b9af.png",
+    "logo_status": "sourced_from_ai4m_directory",
     "department": "Quality Management",
     "goal": "Eliminate delayed detection of quality non-conformities in bakery production by replacing manual quality control with an AI-driven real-time monitoring and alerting system, reducing waste and quality issues.",
     "results": "85% reduction in waste due to quality issues; response time to non-conformities reduced from hours to minutes; scalable across 4 manufacturing facilities.",
@@ -206,7 +252,12 @@
     "not_fit_when": "Very small single-line operations where manual monitoring is sufficient; manufacturers without digitized production measurement data; companies lacking network infrastructure to connect production line sensors to a centralized dashboard.",
     "time_to_value": null,
     "cost_tier": "$$",
-    "strategic_goals": ["Quality & Compliance", "Cost Reduction", "Productivity", "Risk Management"],
+    "strategic_goals": [
+      "Quality & Compliance",
+      "Cost Reduction",
+      "Productivity",
+      "Risk Management"
+    ],
     "sustainability_focus": true
   },
   {
@@ -216,8 +267,8 @@
     "client_name": "Epsylon",
     "pdf_path": "https://txwkssixhznbnlxduluq.supabase.co/storage/v1/object/public/case-studies/submissions/344a6650-e4e3-4858-af88-a9b806de7f02/1771078251435-Epsylon_-_AI_powered_Aluminum_Cutting_Optimization.pdf",
     "brief_description": "Ingeno built Artemis, an AI optimization engine replacing Epsylon's 15-year-old legacy cutting tool that ignored supplier constraints and caused ~20% material waste. The system accounts for supplier constraints, dimensions, and finishing specifications (mill finish, painting, anodization), integrates with ERP via Solidworks BOM import, and generates automated cut sheets — improving material utilization from ~80% to 99%.",
-    "logo_path": null,
-    "logo_status": null,
+    "logo_path": "https://ai4manufacturing.ca/_uploads/686ff87f8b9af.png",
+    "logo_status": "sourced_from_ai4m_directory",
     "department": "Process Engineering",
     "goal": "Replace a legacy aluminum cutting optimization tool with an AI-powered engine that minimizes material waste and enforces supplier constraints, improving procurement efficiency and reducing raw material costs.",
     "results": "Raw material utilization improved from ~80% to 99%; waste reduced from ~20% to <1%; supplier compliance automatically enforced; streamlined workflow from Solidworks BOM import to automated cut sheet generation.",
@@ -227,7 +278,12 @@
     "not_fit_when": "Manufacturers with simple, single-supplier, single-profile cutting needs; operations without ERP or BOM systems; companies with low material waste where optimization ROI would be marginal.",
     "time_to_value": null,
     "cost_tier": "$$",
-    "strategic_goals": ["Cost Reduction", "Quality & Compliance", "Productivity", "Sustainability"],
+    "strategic_goals": [
+      "Cost Reduction",
+      "Quality & Compliance",
+      "Productivity",
+      "Sustainability"
+    ],
     "sustainability_focus": true
   },
   {
@@ -237,8 +293,8 @@
     "client_name": "Bestseller (Jack & Jones)",
     "pdf_path": "https://txwkssixhznbnlxduluq.supabase.co/storage/v1/object/public/case-studies/submissions/344a6650-e4e3-4858-af88-a9b806de7f02/1771078802664-Bestseller__Jack_Jones__-_AI-Driven_Purchasing_Optimization__1_.pdf",
     "brief_description": "Ingeno partnered with Bestseller's Jack & Jones brand to optimize nation-wide procurement for quarterly fashion collections. Using data scientist analysis and historical-data-driven algorithm selection, Ingeno replaced manual multi-day purchasing tasks with AI-driven automated pipelines that consider hundreds of factors simultaneously — meeting strict logistical constraints and budgetary targets.",
-    "logo_path": null,
-    "logo_status": null,
+    "logo_path": "https://ai4manufacturing.ca/_uploads/686ff87f8b9af.png",
+    "logo_status": "sourced_from_ai4m_directory",
     "department": "Supply Chain & Logistics",
     "goal": "Optimize nation-wide procurement for quarterly collections to ensure timely delivery from the worldwide supply chain while meeting budgetary targets.",
     "results": "Procurement processing time reduced from days to minutes; hundreds of purchasing factors now considered simultaneously; enhanced budgetary target attainment under strict logistical constraints.",
@@ -248,7 +304,12 @@
     "not_fit_when": "Small or simple supply chains with few SKUs or suppliers where manual purchasing is already manageable; organizations without sufficient historical purchasing data to train algorithms; companies without willingness to involve data scientists in the process.",
     "time_to_value": null,
     "cost_tier": "$$",
-    "strategic_goals": ["Cost Reduction", "Productivity", "Digital Transformation", "Supply Chain Resilience"],
+    "strategic_goals": [
+      "Cost Reduction",
+      "Productivity",
+      "Digital Transformation",
+      "Supply Chain Resilience"
+    ],
     "sustainability_focus": false
   },
   {
@@ -258,8 +319,8 @@
     "client_name": "Undisclosed industry-leading brand owner",
     "pdf_path": "https://txwkssixhznbnlxduluq.supabase.co/storage/v1/object/public/case-studies/submissions/f91ceba7-d6c8-44c1-b135-dba8f89419b2/1771377443821-Materia_Bioworks_-_Materials_Selection_Through_AI_ML_Computational_Models.pdf",
     "brief_description": "Materia Bioworks built MAPS (Material Application & Prediction System), an AI/ML and Materials Informatics platform replacing trial-and-error bioplastic formulation with predictive, data-driven development. Covering digital formulation screening, a Digital Twin for manufacturing simulation, and strategic sourcing, MAPS compresses total time to market from ~3 years to ~6 months at 1/10th the development cost.",
-    "logo_path": null,
-    "logo_status": null,
+    "logo_path": "https://ai4manufacturing.ca/_uploads/69d64a100edc5.jpg",
+    "logo_status": "sourced_from_ai4m_directory",
     "department": "Research, Product Development & Innovation",
     "goal": "Enable companies to move from trial-heavy bioplastic development to predictive, data-driven decision-making — dramatically reducing time to market and development cost while meeting sustainability and performance requirements.",
     "results": "Total time to market: ~3 years → 6 months (3× faster). Development cost reduced to 1/10th of conventional approach. Product design & material selection: 8 months → 2 months. Formulation development: 12 months → 2.5 months. Prototyping: 6 months → 1.5 months. In documented use case: 6,800 formulations screened digitally → 34 advanced to lab → 10 delivered to client → 4 selected for prototyping → all 4 met functional and mechanical requirements → 200+ feet of film successfully produced.",
@@ -269,7 +330,12 @@
     "not_fit_when": "Companies with no sustainability or regulatory pressure to change materials; organizations already expert in bioplastic formulation; situations where petroleum-based plastics face no regulatory or market restrictions; very small-scale producers where platform costs outweigh benefits.",
     "time_to_value": "6 months (from concept to market-ready product)",
     "cost_tier": "$$$",
-    "strategic_goals": ["Sustainability", "Innovation", "Cost Reduction", "Risk Management"],
+    "strategic_goals": [
+      "Sustainability",
+      "Innovation",
+      "Cost Reduction",
+      "Risk Management"
+    ],
     "sustainability_focus": true
   },
   {
@@ -279,8 +345,8 @@
     "client_name": null,
     "pdf_path": "https://txwkssixhznbnlxduluq.supabase.co/storage/v1/object/public/case-studies/submissions/e22c2d20-a9af-4dd5-b233-a2d9572c351e/1769799914947-AI_in_Manufacturing_White_Paper.pdf",
     "brief_description": "NTWIST's white paper synthesizes peer-reviewed research (AIChE, ASME, Elsevier, Procedia) to demonstrate how AI scheduling unlocks hidden production capacity in engineer-to-order manufacturers, where 30–50% of labour time never becomes productive work. The paper shows AI-driven scheduling reduces bottlenecks, balances workloads, increases productive time, and improves on-time delivery without capital investment.",
-    "logo_path": null,
-    "logo_status": null,
+    "logo_path": "https://ai4manufacturing.ca/_uploads/63da7071d8dd9.png",
+    "logo_status": "sourced_from_ai4m_directory",
     "department": "Manufacturing Operations",
     "goal": "Demonstrate to ETO manufacturers that AI-driven scheduling can unlock hidden productive capacity, reduce cycle times, improve quality, and increase on-time delivery without adding new machines or expanding the workforce.",
     "results": "Throughput increases: 20–45%. Cycle time reductions: 30–50%. Defect/rework reductions: 15–30%. Operating cost reductions: 10–20%. Productive labour and machine time gains: 20–40%. On-time delivery: 90%+. AI tools reduced defects by up to 25% through faster anomaly detection. Labour time lost to non-productive work: 30–50% in typical plants (ASME).",
@@ -290,7 +356,12 @@
     "not_fit_when": "Highly standardized mass-production environments where AI scheduling adds little over existing optimized MES/ERP; very small operations with simple scheduling needs; organizations without existing production data; companies unwilling to change scheduling workflows.",
     "time_to_value": null,
     "cost_tier": "$$",
-    "strategic_goals": ["Productivity", "Quality & Compliance", "Cost Reduction", "Digital Transformation"],
+    "strategic_goals": [
+      "Productivity",
+      "Quality & Compliance",
+      "Cost Reduction",
+      "Digital Transformation"
+    ],
     "sustainability_focus": false
   }
 ]
