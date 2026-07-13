@@ -1,142 +1,212 @@
 @import "tailwindcss";
 
+/* ── Design Tokens ─────────────────────────────────────────────────────────── */
 :root {
-  --background: #050510;
-  --foreground: #f8fafc;
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --bg:            #F2F6FF;
+  --bg-surface:    #FFFFFF;
+  --bg-raised:     #E8EFFD;
+  --accent:        #1AAB6D;   /* AI4M green */
+  --accent-dark:   #128050;
+  --accent-blue:   #1565E8;
+  --text:          #0B1D3A;
+  --text-secondary:#4A6480;
+  --text-muted:    #8AAAC4;
+  --border:        rgba(11, 29, 58, 0.09);
+  --border-active: rgba(26, 171, 109, 0.45);
+  --font-sans:     var(--font-geist-sans);
+  --font-mono:     var(--font-geist-mono);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+/* ── Base ──────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg);
+  color: var(--text);
   font-family: var(--font-sans), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ── Scrollbar ─────────────────────────────────────────────────────────────── */
-::-webkit-scrollbar { width: 5px; height: 5px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: #334155; }
+::-webkit-scrollbar        { width: 4px; height: 4px; }
+::-webkit-scrollbar-track  { background: transparent; }
+::-webkit-scrollbar-thumb  { background: #C8D8F0; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
-/* ── Industry 4.0 Moving Grid ─────────────────────────────────────────────── */
-.hero-grid {
-  background-image:
-    linear-gradient(rgba(56, 189, 248, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(56, 189, 248, 0.055) 1px, transparent 1px);
-  background-size: 64px 64px;
-  animation: grid-shift 28s linear infinite;
+/* ── Hero dot grid ─────────────────────────────────────────────────────────── */
+.dot-grid {
+  background-image: radial-gradient(rgba(11, 29, 58, 0.06) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
 }
 
-@keyframes grid-shift {
-  to { background-position: 64px 64px; }
-}
-
-/* ── Hero gradient headline ────────────────────────────────────────────────── */
-.hero-gradient-text {
-  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 35%, #34d399 70%, #38bdf8 100%);
-  background-size: 300% 300%;
+/* ── Headline gradient ─────────────────────────────────────────────────────── */
+.headline-gradient {
+  background: linear-gradient(130deg, #0B1D3A 0%, #1565E8 55%, #1AAB6D 100%);
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: gradient-flow 5s ease infinite;
+  animation: headline-shift 8s ease infinite;
 }
-
-@keyframes gradient-flow {
+@keyframes headline-shift {
   0%, 100% { background-position: 0% 50%; }
   50%       { background-position: 100% 50%; }
 }
 
-/* ── Animated orbs ─────────────────────────────────────────────────────────── */
-.animate-orb-1 { animation: orb1 20s ease-in-out infinite; }
-.animate-orb-2 { animation: orb2 25s ease-in-out infinite; }
-.animate-orb-3 { animation: orb3 15s ease-in-out infinite; }
-
-@keyframes orb1 {
-  0%,100% { transform: translate(0, 0);       opacity: 0.12; }
-  33%     { transform: translate(70px,-50px); opacity: 0.20; }
-  66%     { transform: translate(-35px,35px); opacity: 0.08; }
-}
-@keyframes orb2 {
-  0%,100% { transform: translate(0, 0);       opacity: 0.08; }
-  40%     { transform: translate(-80px,55px); opacity: 0.14; }
-  70%     { transform: translate(45px,-35px); opacity: 0.06; }
-}
-@keyframes orb3 {
-  0%,100% { transform: translate(-50%,-50%) scale(1);   opacity: 0.05; }
-  50%     { transform: translate(-50%,-50%) scale(1.6); opacity: 0.11; }
+/* ── Fade-In-Up ────────────────────────────────────────────────────────────── */
+.animate-fade-in-up { animation: fade-up 0.85s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.delay-100  { animation-delay:  80ms; }
+.delay-200  { animation-delay: 180ms; }
+.delay-300  { animation-delay: 300ms; }
+.delay-400  { animation-delay: 440ms; }
+.delay-500  { animation-delay: 590ms; }
+.delay-600  { animation-delay: 750ms; }
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0);    }
 }
 
-/* ── Horizontal scan line ──────────────────────────────────────────────────── */
-.scan-line {
-  position: absolute;
-  left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(to right, transparent, rgba(56,189,248,0.45), transparent);
-  animation: scan-move 12s linear infinite;
-  pointer-events: none;
-}
-@keyframes scan-move {
-  0%   { top: 0;    opacity: 0; }
-  3%   { opacity: 1; }
-  97%  { opacity: 0.4; }
-  100% { top: 100%; opacity: 0; }
-}
-
-/* ── Shimmer on CTA button ─────────────────────────────────────────────────── */
+/* ── Shimmer (CTA) ─────────────────────────────────────────────────────────── */
 .shimmer {
-  background: linear-gradient(
-    105deg,
-    transparent 30%,
-    rgba(255,255,255,0.08) 50%,
-    transparent 70%
-  );
+  background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.15) 50%, transparent 70%);
   background-size: 200% 100%;
-  animation: shimmer-move 2.5s linear infinite;
+  animation: shimmer-move 2.8s linear infinite;
 }
 @keyframes shimmer-move {
   from { background-position: -200% 0; }
   to   { background-position:  200% 0; }
 }
 
-/* ── Pulsing dot (live indicator) ──────────────────────────────────────────── */
-.pulse-dot {
-  animation: pulse-dot 2s cubic-bezier(0.4,0,0.6,1) infinite;
-}
-@keyframes pulse-dot {
-  0%,100% { opacity: 1; }
-  50%     { opacity: 0.25; }
+/* ── Live pulse dot ────────────────────────────────────────────────────────── */
+.live-dot { animation: live-pulse 2.4s ease infinite; }
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(26,171,109,0.4); }
+  50%       { opacity: 0.6; box-shadow: 0 0 0 4px rgba(26,171,109,0); }
 }
 
-/* ── Fade-in-up entrance ───────────────────────────────────────────────────── */
-.animate-fade-in-up { animation: fade-up 0.85s cubic-bezier(0.16,1,0.3,1) both; }
-.animation-delay-100 { animation-delay: 100ms; }
-.animation-delay-200 { animation-delay: 220ms; }
-.animation-delay-300 { animation-delay: 360ms; }
-.animation-delay-400 { animation-delay: 520ms; }
-.animation-delay-500 { animation-delay: 680ms; }
-
-@keyframes fade-up {
-  from { opacity: 0; transform: translateY(22px); }
-  to   { opacity: 1; transform: translateY(0);    }
+/* ── Glass Nav ─────────────────────────────────────────────────────────────── */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(11, 29, 58, 0.08);
+  box-shadow: 0 1px 24px rgba(11, 29, 58, 0.06);
 }
 
-/* ── Card border-flow animation ────────────────────────────────────────────── */
-@keyframes border-flow {
-  0%,100% { opacity: 0.4; }
-  50%     { opacity: 0.8; }
+/* ── Stat tile ─────────────────────────────────────────────────────────────── */
+.stat-tile {
+  background: #FFFFFF;
+  border: 1px solid rgba(11, 29, 58, 0.08);
+  box-shadow: 0 2px 12px rgba(11, 29, 58, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+.stat-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(11, 29, 58, 0.10);
+  border-color: rgba(26, 171, 109, 0.30);
 }
 
-/* ── Mini data bars (feature card decoration) ──────────────────────────────── */
-@keyframes bar-grow {
-  from { transform: scaleY(0); }
-  to   { transform: scaleY(1); }
+/* ── Value card ────────────────────────────────────────────────────────────── */
+.value-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(11, 29, 58, 0.08);
+  box-shadow: 0 2px 16px rgba(11, 29, 58, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+.value-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(11, 29, 58, 0.10);
+  border-color: rgba(26, 171, 109, 0.25);
+}
+
+/* ── Use case card ─────────────────────────────────────────────────────────── */
+.uc-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(11, 29, 58, 0.08);
+  box-shadow: 0 2px 12px rgba(11, 29, 58, 0.05);
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+.uc-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(11, 29, 58, 0.10);
+  border-color: rgba(26, 171, 109, 0.35);
+}
+
+/* ── Case study child card ─────────────────────────────────────────────────── */
+.cs-child-card {
+  background: #F8FBF9;
+  border: 1px solid rgba(26, 171, 109, 0.20);
+  box-shadow: 0 1px 8px rgba(11, 29, 58, 0.04);
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+.cs-child-card:hover {
+  border-color: rgba(26, 171, 109, 0.45);
+  box-shadow: 0 4px 16px rgba(26, 171, 109, 0.08);
+}
+
+/* ── Filter pill ───────────────────────────────────────────────────────────── */
+.filter-pill {
+  border: 1px solid rgba(11, 29, 58, 0.12);
+  background: #FFFFFF;
+  color: var(--text-secondary);
+  transition: border-color 0.2s, background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.filter-pill:hover {
+  border-color: rgba(26, 171, 109, 0.40);
+  color: var(--text);
+  background: rgba(26, 171, 109, 0.04);
+}
+.filter-pill.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+  box-shadow: 0 2px 12px rgba(26, 171, 109, 0.30);
+}
+
+/* ── Role card ─────────────────────────────────────────────────────────────── */
+.role-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(11, 29, 58, 0.09);
+  box-shadow: 0 1px 6px rgba(11, 29, 58, 0.05);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.role-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(11, 29, 58, 0.10);
+  border-color: rgba(26, 171, 109, 0.30);
+}
+.role-card.active {
+  border-color: var(--accent);
+  background: rgba(26, 171, 109, 0.06);
+  box-shadow: 0 4px 16px rgba(26, 171, 109, 0.18);
+}
+
+/* ── AI4M gold badge ───────────────────────────────────────────────────────── */
+.ai4m-badge {
+  background: rgba(200, 160, 32, 0.10);
+  border: 1px solid rgba(200, 160, 32, 0.30);
+  color: #8A6800;
+}
+
+/* ── Section divider ───────────────────────────────────────────────────────── */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(11, 29, 58, 0.12), transparent);
+}
+
+/* ── Explorer sticky bar ───────────────────────────────────────────────────── */
+.explorer-bar {
+  background: rgba(242, 246, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(11, 29, 58, 0.08);
 }

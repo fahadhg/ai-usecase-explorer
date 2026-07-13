@@ -30,10 +30,22 @@ export interface CaseStudy {
   id: string;
   title: string;
   company_name: string;
+  client_name?: string;
   pdf_path: string;
   brief_description: string;
   logo_path: string | null;
   logo_status: string | null;
+  department?: string;
+  goal?: string;
+  results?: string;
+  kpis?: string;
+  example?: string;
+  fit_criteria?: string;
+  not_fit_when?: string;
+  time_to_value?: string;
+  cost_tier?: string;
+  strategic_goals?: string[];
+  sustainability_focus?: boolean;
 }
 
 export interface CaseStudyUseCase {

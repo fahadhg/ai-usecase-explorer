@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Use Case Explorer | Industry 4.0 Intelligence Platform",
+  title: "AI4M Use Case Explorer | AI4M Canada",
   description:
-    "Explore 100+ proven AI use cases for manufacturers. Filter by department, strategic goal, cost tier, and real-world validation. Built for Industry 4.0 leaders.",
+    "Explore AI4M-certified Industrial AI use cases built for Canadian manufacturers. Filter by department, stakeholder role, and strategic goal.",
   openGraph: {
-    title: "AI Use Case Explorer",
-    description: "100+ proven AI use cases for modern manufacturers.",
+    title: "AI4M Use Case Explorer",
+    description: "AI4M-certified Industrial AI use cases for Canadian manufacturers.",
     type: "website",
   },
 };
@@ -31,7 +31,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#050510]">{children}</body>
+      <body className="min-h-full flex flex-col bg-[#F2F6FF]">{children}</body>
     </html>
   );
 }
